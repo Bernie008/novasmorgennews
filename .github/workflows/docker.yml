@@ -49,6 +49,6 @@ jobs:
           from: GitHub Actions <${{ secrets.EMAIL_USERNAME }}>
           content_type: text/html
           body: |
-            <p>Hallo! Eine neue MP3 wurde erstellt.</p>
-            <p>Du kannst sie hier herunterladen:</p>
-            <p><a href="https://raw.githubusercontent.com/DEIN_USERNAME/DEIN_REPO/main/DEIN_DATEINAME.mp3">MP3 herunterladen</a></p>
+            Hallo! Eine neue MP3 wurde erstellt.
+            Du kannst sie hier herunterladen:
+            https://raw.githubusercontent.com/Bernie008/novasmorgennews/main/podcast_episode.mp3
