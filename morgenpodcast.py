@@ -6,12 +6,6 @@ from bs4 import BeautifulSoup
 import pandas as pd
 
 
-
-
-
-# %%
-
-
 # Ziel-URL
 url = "https://www.tagesschau.de"
 
@@ -49,14 +43,6 @@ for link_tag in soup.find_all("a", class_="teaser__link"):
 
 # DataFrame erzeugen
 df = pd.DataFrame(data)
-
-# Anzeigen
-print(df)
-
-# %%
-df
-
-
 
 # %%
 import os
@@ -99,8 +85,7 @@ podcast_script = response.choices[0].message.content
 #%%
 print(podcast_script)
 
-
-
+"""
 # Podcast-Text (z. B. aus vorheriger Chat-Antwort)
 text = podcast_script  # ← dein generierter Podcast-Text
 
@@ -117,3 +102,4 @@ with open("podcast_episode.mp3", "wb") as f:
 
 print("🎧 Audio gespeichert als podcast_episode.mp3")
 # %%
+"""
