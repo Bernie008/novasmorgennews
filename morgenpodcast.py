@@ -99,11 +99,7 @@ podcast_script = response.choices[0].message.content
 #%%
 print(podcast_script)
 
-#%%
 
-
-# OpenAI-Client initialisieren
-client = OpenAI(api_key=api_key)
 
 # Podcast-Text (z. B. aus vorheriger Chat-Antwort)
 text = podcast_script  # ← dein generierter Podcast-Text
