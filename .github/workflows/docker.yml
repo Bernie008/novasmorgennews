@@ -36,7 +36,8 @@ jobs:
           git add *.mp3
           git commit -m "Add generated MP3 file" || echo "No changes to commit"
           git push
-            - name: Send Email with MP3 download link
+          
+      - name: Send Email with MP3 download link
         uses: dawidd6/action-send-mail@v3
         with:
           server_address: ${{ secrets.SMTP_SERVER }}
@@ -50,5 +51,4 @@ jobs:
           body: |
             <p>Hallo! Eine neue MP3 wurde erstellt.</p>
             <p>Du kannst sie hier herunterladen:</p>
-            <p><a href="https://raw.githubusercontent.com/DEIN_USERNAME/DEIN_REPO/main/dein-mp3-name.mp3">MP3 herunterladen</a></p>
-
+            <p><a href="https://raw.githubusercontent.com/DEIN_USERNAME/DEIN_REPO/main/DEIN_DATEINAME.mp3">MP3 herunterladen</a></p>
