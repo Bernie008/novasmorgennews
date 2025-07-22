@@ -85,7 +85,7 @@ podcast_script = response.choices[0].message.content
 #%%
 print(podcast_script)
 
-"""
+
 # Podcast-Text (z. B. aus vorheriger Chat-Antwort)
 text = podcast_script  # ← dein generierter Podcast-Text
 
@@ -102,4 +102,4 @@ with open("podcast_episode.mp3", "wb") as f:
 
 print("🎧 Audio gespeichert als podcast_episode.mp3")
 # %%
-"""
+
