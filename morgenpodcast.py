@@ -60,12 +60,11 @@ df
 
 # %%
 import os
-from dotenv import load_dotenv
 from openai import OpenAI
 
-# .env-Datei laden
-load_dotenv()
-api_key = os.getenv("OPENAI_API_KEY2")
+# AP-Key laden
+api_key = os.getenv("API_KEY")
+print("API-Key wurde geladen, Länge:", len(api_key))
 
 # Client mit Key initialisieren
 client = OpenAI(api_key=api_key)
@@ -102,9 +101,6 @@ print(podcast_script)
 
 #%%
 
-# .env laden
-load_dotenv()
-api_key = os.getenv("OPENAI_API_KEY2")
 
 # OpenAI-Client initialisieren
 client = OpenAI(api_key=api_key)
