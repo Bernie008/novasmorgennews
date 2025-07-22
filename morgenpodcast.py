@@ -64,6 +64,7 @@ for index, row in df.head(10).iterrows():
 prompt = (
     "Erstelle bitte ein ca. 5-minütiges Podcast-Skript auf Deutsch für Kinder im Alter von etwa 12 Jahren. "
     "Der Podcast soll unterhaltsam, einfach erklärt und spannend sein. "
+    "Gib keine Regieanweisungen und keine Soundeffekte vor"
     "Nutze die folgenden Nachrichten als Grundlage:\n\n"
     f"{combined_text}"
 )
