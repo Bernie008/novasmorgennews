@@ -49,8 +49,8 @@ import os
 from openai import OpenAI
 
 # AP-Key laden
-api_key = os.getenv("OPENAI_API_KEY2")
-#print("API-Key wurde geladen, Länge:", len(api_key))
+api_key = os.getenv("OPENAI_API_KEY")
+print("API-Key wurde geladen, Länge:", len(api_key))
 
 # Client mit Key initialisieren
 client = OpenAI(api_key=api_key)
