@@ -1,6 +1,7 @@
 # novasmorgennews
 
-morgenpodcast.py erstellt aus den ersten 10 Nachrichten von tagesschau.de einen ca. 3-minütigen Podast als MP3.
+morgenpodcast.py erstellt aus den ersten 10 Headlines und Teasertexten von tagesschau.de einen ca. 3-minütigen Podast als MP3. 
+Als Zielgruppe wurden Kinder im Alter von 12 Jahren vorgegeben.
 Der Workflow wird täglich um 10 Uhr (UTC) ausgeführt.
 Nach Erstellung des MP3 wird eine Mail an den eingetragenen Empfänger geschickt.
 
