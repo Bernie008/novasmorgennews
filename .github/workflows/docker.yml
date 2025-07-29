@@ -2,7 +2,7 @@ name: Python Script with OpenAI
 
 on:
   schedule:
-    - cron: '0 10 * * *'   # täglicher Trigger UTC-Time
+  #  - cron: '0 10 * * *'   # täglicher Trigger UTC-Time
   workflow_dispatch:        # manueller Trigger
 
 jobs:
